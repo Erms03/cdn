@@ -1,0 +1,396 @@
+{
+  // Único bloque que necesita completar diseño. Los tokens son los de HeroUI.
+  "appearance": {
+    "assets": {
+      "background": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/background.png",
+      "cards": {
+        // "horizontal": true,
+        // "initial": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/card-initial.png",
+        // "medium": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/card-medium.png",
+        "miniPhysical": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/card-mini-physical.png",
+        // El arte físico usa el verde claro y el digital el verde oscuro de Figma.
+        // v2 elimina las sombras y deja que la app dibuje la tarjeta apilada.
+        "physical": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/card-physical.png",
+        "physicalBlocked": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/card-physical-blocked.png",
+        // "success": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/card-success.png",
+        "virtual": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/card-virtual.png",
+        "virtualBlocked": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/card-virtual-blocked.png",
+        "miniVirtual": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/card-mini-virtual.png",
+      },
+      "favicon": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/icon.png",
+      "icon": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/icon.png",
+      "logo": {
+        "black": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/logo-black.svg",
+        "default": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/logo.svg",
+        "white": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/logo-white.svg",
+      },
+      "notificationIcon": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/icon.png",
+      "onboarding": {
+        "onboardingAccountApproved": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/onboarding-account-approved.svg",
+        "onboardingActiveBiometric": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/onboarding-active-biometric.svg",
+        "onboardingDocumentAccepted": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/onboarding-document-accepted.svg",
+        "onboardingDocumentPendingReview": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/onboarding-document-pending-review.svg",
+        "onboardingDocumentUpload": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/onboarding-document-upload.svg",
+        "onboardingLateActiveBiometric": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/onboarding-late-active-biometric.svg",
+        "onboardingVerifyIdentity": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/onboarding-verify-identity.svg",
+        "registerEmailVerification": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/register-email-verification.svg",
+        "registerPhoneVerification": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/register-phone-verification.svg",
+      },
+      "splash": {
+        "backgroundColor": "#FFFFFF",
+        "image": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/splash-screen.png",
+        "imageWidth": 220,
+        "resizeMode": "contain",
+      },
+      "walkthrough": {
+        "balance": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/walkthrough/1.png",
+        "transfers": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/walkthrough/2.png",
+        "cards": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/walkthrough/3.png",
+      },
+      "wordmark": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/assets/wordmark.png",
+    },
+    "fonts": {
+      "bold": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/fonts/Poppins-Bold.ttf",
+      "medium": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/fonts/Poppins-Medium.ttf",
+      "normal": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/fonts/Poppins-Regular.ttf",
+      "semibold": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/fonts/Poppins-SemiBold.ttf",
+    },
+    "theme": {
+      // Primitivos y geometría global de HeroUI.
+      // Figma no define variables propias para estos valores.
+      "white": "#FFFFFF",
+      "black": "#000000",
+      "snow": "#FCFCFC",
+      "eclipse": "#18181B",
+      "borderWidth": "1px",
+      "fieldBorderWidth": "1px",
+      "radius": "0.5rem",
+      "fieldRadius": "calc(var(--radius) * 1.75)",
+      "opacityDisabled": "0.5",
+      "theme": "default",
+
+      // Colores semánticos — GajaPay.
+      "background": "#F4F6F8",
+      "foreground": "#111827",
+
+      "surface": "#FFFFFF",
+      "surfaceForeground": "#111827",
+
+      "surfaceSecondary": "#E8F5EF",
+      "surfaceSecondaryForeground": "#0F4F35",
+
+      "surfaceTertiary": "#D9DEE5",
+      "surfaceTertiaryForeground": "#374151",
+
+      "overlay": "#FFFFFF",
+      "overlayForeground": "#111827",
+      "backdrop": "rgba(0, 0, 0, 0.20)",
+
+      "muted": "#797979",
+
+      "default": "#D9DEE5",
+      "defaultForeground": "#374151",
+
+      "accent": "#237E5A",
+      "accentForeground": "#FFFFFF",
+
+      "fieldBackground": "#FFFFFF",
+      "fieldForeground": "#111827",
+      "fieldPlaceholder": "#9CA3AF",
+      "fieldBorder": "#D9DEE5",
+
+      "success": "#16825D",
+      "successForeground": "#FFFFFF",
+
+      "warning": "#D98A00",
+      "warningForeground": "#111827",
+
+      "danger": "#EF4444",
+      "dangerForeground": "#FFFFFF",
+
+      "segment": "#FFFFFF",
+      "segmentForeground": "#111827",
+
+      "border": "#D9DEE5",
+      "separator": "#D9DEE5",
+
+      "focus": "#237E5A",
+      "link": "#237E5A",
+
+      // Figma no contiene variables o estilos de sombra específicos por marca.
+      "surfaceShadow": "0 2px 4px 0 rgba(0, 0, 0, 0.04), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+      "overlayShadow": "0 2px 8px 0 rgba(0, 0, 0, 0.06)",
+      "fieldShadow": "0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+    },
+  },
+  // Capacidades que una marca puede activar o desactivar sin bifurcar el código.
+  "capabilities": {
+    "registration": {
+      // Dato que se solicita para registrarse e iniciar sesión:
+      // "email": correo electrónico completo como username.
+      // "phone": número de celular internacional como username.
+      // "username": nombre de usuario elegido por la persona.
+      "identifier": "email",
+      // Con identifier: "username", elige el primer contacto para confirmar: "email" o "phone".
+      // Ese contacto debe tener presence: "required" y verify: true.
+      // Si se omite, se prioriza el primer contacto obligatorio verificable (email, luego phone).
+      // Con identifier: "email" o "phone" se utiliza el propio identificador.
+      "accountVerificationContact": "email",
+      "contacts": {
+        // Las mismas opciones se aplican a email y phone, de forma independiente.
+        // presence:
+        //   "required": es obligatorio proporcionar el dato.
+        //   "optional": se muestra, pero la persona puede omitirlo.
+        //   "hidden": no se solicita ni se envía al crear la cuenta.
+        // verify:
+        //   true: exige verificar con un código si se proporciona el contacto.
+        //   false: se guarda en PII y Cognito y se confirma automáticamente por backend, sin pedir código.
+        // Combinaciones válidas para cada contacto:
+        //   { "presence": "required", "verify": true }
+        //   { "presence": "required", "verify": false }
+        //   { "presence": "optional", "verify": true }
+        //   { "presence": "optional", "verify": false }
+        //   { "presence": "hidden", "verify": false }
+        // Restricciones:
+        // Si identifier es "email" o "phone", ese contacto siempre es required; verify puede ser true o false.
+        // La app también fuerza esa regla al leer el JSON: el identificador nunca se oculta.
+        // hidden + verify: true no está permitido. El generador valida estas reglas.
+        "email": { "presence": "required", "verify": true },
+        "phone": { "presence": "required", "verify": true },
+      },
+    },
+    // Nivel de onboarding por app/compañía. null hasta definir su flujo.
+    // Los números identifican niveles; las pantallas y su orden se definen en código.
+    "onboarding": {
+      "level": 3,
+      // Flujo confirmado para esta compañía; configurable en otras marcas.
+      "contract": {
+        "generationEndpoint": "/internal/connector/22/flows/dcfd23776507449d8988554c5064418c",
+        "templateId": 210,
+      },
+    },
+    "flags": {
+      "biometricAuth": true,
+      "camera": true,
+      "darkMode": false,
+      "documentScanner": true,
+      "fileUpload": true,
+      "gradient": false,
+      "locationServices": true,
+      "multiLanguage": false,
+      "offlineMode": false,
+      "pushNotifications": false,
+      "qrCodeScanner": true,
+      "socialLogin": false,
+    },
+    "wallet": {
+      "modules": {
+        // "Agregar cuenta" en "Tus cuentas": la cuenta se agrega al activar la
+        // tarjeta física que la acompaña (como creditAccounts en monelo).
+        // limit: cuentas que puede tener el cliente; null sin límite.
+        "accounts": {
+          "add": {
+            "enabled": false,
+            "limit": null,
+          },
+        },
+        "biometric": true,
+        "cards": true,
+        "cashWithdrawal": false,
+        "credit": false,
+        "location": true,
+        "nip": {
+          "editable": true,
+          "enabled": true,
+        },
+        "otp": true,
+        "payrollLoan": false,
+        "preventCapture": false,
+        "servicePayments": true,
+        "spei": {
+          "in": {
+            "clabe": true,
+            "code": true,
+            "reference": true,
+          },
+          "out": {
+            "external": {
+              "card": true,
+              "clabe": true,
+              "phone": true,
+            },
+            "internal": true,
+          },
+        },
+        "transfers": true,
+      },
+      "otp": {
+        "emailTemplate": "REEMPLAZAR",
+        "expiresAfterSeconds": 300,
+        "length": 6,
+        "resendAfterSeconds": 60,
+        "smsTemplate": "REEMPLAZAR",
+      },
+    },
+  },
+  // Endpoints, proveedores e integridad; no colocar secretos reales en este ejemplo.
+  "connectivity": {
+    "baseUrls": {
+      "app": "https://front.dynamicore.io",
+      "front": "https://front.dynamicore.io",
+      "qa": "https://front-qa.dynamicore.io",
+    },
+    "connectorUrl": "https://connector.dynamicore.io",
+    "integrity": {
+      "google": {
+        "enabled": false,
+        "projectNumber": "REEMPLAZAR",
+      },
+      "ios": {
+        "enabled": false,
+      },
+    },
+    "providers": {
+      "aws": {
+        "user": {
+          "baseUrl": "https://cognito-idp.us-west-2.amazonaws.com/",
+          "bucket": "documents-fintcore",
+          "context": "1d3052a6-84f8-47ad-adb6-15b20ccc7c9b",
+          "poolsId": "us-west-2_U3AsGgwZv",
+          "region": "us-west-2",
+          "webClientId": "6dsgj4euglas09726tokn0r4pp",
+        },
+      },
+    },
+    "retryAttempts": 3,
+    "sslPinning": {
+      "enabled": false,
+      "keys": [],
+    },
+    "timeout": 30000,
+  },
+  // Textos y contenido de interfaz, contenido regulatorio e idioma.
+  "content": {
+    "legal": {
+      "documents": {
+        "privacyNotice": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/GajaPay_Aviso_de_Privacidad_v2.0-SANDBOX.docx",
+        "termsConditions": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/GajaPay_Contrato_TyC_v2.0-SANDBOX.docx",
+        "electronicMedia": null,
+      },
+      "privacyNoticeUrl": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/GajaPay_Aviso_de_Privacidad_v2.0-SANDBOX.docx",
+      "termsUrl": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/GajaPay_Contrato_TyC_v2.0-SANDBOX.docx",
+    },
+    "locale": "es-MX",
+    "walkthrough": [
+      {
+        "image": "walkthrough.balance",
+        "title": "Tu saldo, siempre a la mano.",
+        "description": "Consulta tu saldo y administra tu cuenta fácilmente desde GajaPay.",
+      },
+      {
+        "image": "walkthrough.transfers",
+        "title": "Tu dinero, más cerca de ti.",
+        "description": "Envía dinero y consulta tus movimientos desde un solo lugar.",
+      },
+      {
+        "image": "walkthrough.cards",
+        "title": "Tus tarjetas, bajo tu control.",
+        "description": "Consulta tus tarjetas y ten su información a la mano desde la app.",
+      },
+    ],
+  },
+  // Configuración de interacción con el usuario y observabilidad.
+  "engagement": {
+    "analytics": {
+      "enabled": false,
+      "provider": "REEMPLAZAR",
+    },
+    "notifications": {
+      "androidCollapsedTitle": "GajaPay",
+      "channelId": "gajapay-default",
+      "color": "#237E5A",
+      "title": "GajaPay",
+    },
+  },
+  // Identidad técnica y datos públicos de la institución.
+  "identity": {
+    "app": {
+      "displayName": "GajaPay",
+      "eas": {
+        "projectId": "f9125c7e-0957-419e-84d6-df7199a183b5",
+      },
+      "name": "GajaPay",
+      "owner": "dynamicoredevs",
+      "scheme": "gajapay",
+      "slug": "gajapay",
+      "version": "1.0.0",
+    },
+    "company": {
+      "id": "gajapay",
+      "legalName": "REEMPLAZAR_CON_RAZON_SOCIAL",
+      "privacyPolicyUrl": "https://REEMPLAZAR_DOMINIO.mx/privacidad",
+      "supportEmail": "soporte@REEMPLAZAR_DOMINIO.mx",
+      "supportPhone": "+52REEMPLAZAR_TELEFONO",
+      "termsOfServiceUrl": "https://REEMPLAZAR_DOMINIO.mx/terminos",
+      "website": "https://REEMPLAZAR_DOMINIO.mx",
+    },
+  },
+  // Interruptores no visuales para soporte y operación de la aplicación.
+  "operations": {
+    "debug": {
+      "enabled": false,
+      "logLevel": "warn",
+      "reduxLogger": false,
+      "showDevMenu": false,
+    },
+    "performance": {
+      "enabled": true,
+    },
+  },
+  // Valores específicos de los binarios y de las actualizaciones OTA.
+  "platform": {
+    "android": {
+      "edgeToEdgeEnabled": true,
+      "googleServicesFile": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Gajapay/google-services.json",
+      "navigationBar": {
+        "backgroundColor": "#",
+        "barStyle": "light-content",
+        "visible": true,
+      },
+      "package": "com.dynamicore.gajapay",
+      "versionCode": 1,
+    },
+    "ios": {
+      "bundleIdentifier": "com.dynamicore.gajapay.app",
+      "googleSignIn": {
+        "reservedClientId": "REEMPLAZAR",
+      },
+      "supportsTablet": false,
+    },
+    "updates": {
+      "checkAutomatically": "ON_ERROR_RECOVERY",
+      "enabled": true,
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/f9125c7e-0957-419e-84d6-df7199a183b5",
+    },
+    "web": {
+      "display": "standalone",
+      "lang": "es-MX",
+      "name": "GajaPay",
+      "scope": "/",
+      "shortName": "GajaPay",
+      "startUrl": "/",
+    },
+  },
+  // Políticas de protección que el código compartido puede aplicar por marca.
+  "safeguards": {
+    "certificatePinning": false,
+    "encryption": {
+      "algorithm": "AES-256-GCM",
+      "enabled": true,
+    },
+    "jailbreakDetection": true,
+    "preventScreenCapture": false,
+    "rootDetection": true,
+  },
+}
