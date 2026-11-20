@@ -1,0 +1,346 @@
+{
+  // Marca Dynamicore IFPE. Las imágenes se publican en un prefijo propio.
+  "appearance": {
+    "assets": {
+      // Extensión nativa para los iconos adaptativos de Dynamicore IFPE.
+      "android": {
+        "adaptiveIcon": {
+          "backgroundColor": "#0C3A72",
+          "backgroundImage": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/android-adaptive-background.png",
+          "foregroundImage": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/android-adaptive-foreground.png",
+          "monochromeImage": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/android-adaptive-monochrome.png",
+        },
+      },
+      "cards": {
+        "miniPhysical": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/card-mini-physical.png",
+        "physical": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/card-physical.png",
+        "physicalBlocked": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/card-physical-blocked.png",
+        "virtual": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/card-virtual.png",
+        "virtualBlocked": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/card-virtual-blocked.png",
+        "miniVirtual": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/card-mini-virtual.png",
+      },
+      "favicon": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/icon.png",
+      "icon": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/icon.png",
+      "ios": {
+        "icon": {
+          "dark": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/icon.png",
+          "light": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/icon.png",
+          "tinted": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/icon.png",
+        },
+      },
+      "logo": {
+        "default": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/logo.svg",
+        "white": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/logo-white.svg",
+      },
+      "notificationIcon": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/notification-icon.png",
+      "splash": {
+        "backgroundColor": "#0C3A72",
+        "image": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/splash-screen.png",
+        "imageWidth": 200,
+        "resizeMode": "contain",
+      },
+      "walkthrough": {
+        "balance": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/walkthrough/1.png",
+        "transfers": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/walkthrough/2.png",
+        "cards": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/walkthrough/3.png",
+      },
+    },
+    "fonts": {
+      "bold": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/fonts/Poppins-Bold.ttf",
+      "medium": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/fonts/Poppins-Medium.ttf",
+      "normal": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/fonts/Poppins-Regular.ttf",
+      "semibold": "https://dynamicore-white-label-config.s3.us-west-2.amazonaws.com/company/5422/assets/fonts/Poppins-SemiBold.ttf",
+    },
+    "theme": {
+      // Primitivos y geometría global de HeroUI.
+      "white": "#FFFFFF",
+      "black": "#000000",
+      "snow": "#FCFCFC",
+      "eclipse": "#18181B",
+      "borderWidth": "1px",
+      "fieldBorderWidth": "1px",
+      "radius": "0.5rem",
+      "fieldRadius": "calc(var(--radius) * 1.75)",
+      "opacityDisabled": "0.5",
+      "theme": "default",
+      // Los azules de marca provienen del logo de Dynamicore.
+      "background": "#F4F7FA", // neutral.lighter
+      "foreground": "#0F172A", // neutral.darker
+      "surface": "#FFFFFF",
+      "surfaceForeground": "#0F172A",
+      "surfaceSecondary": "#E4EFFC",
+      "surfaceSecondaryForeground": "#0C3A72",
+      "surfaceTertiary": "#DCE4EC", // neutral.light
+      "surfaceTertiaryForeground": "#334155", // neutral.dark
+      "overlay": "#FFFFFF",
+      "overlayForeground": "#0F172A",
+      "backdrop": "rgba(0, 0, 0, 0.20)",
+      "muted": "#6B7A90", // neutral.DEFAULT
+      "default": "#DCE4EC",
+      "defaultForeground": "#334155",
+      "accent": "#0B6BDD",
+      "accentForeground": "#FFFFFF",
+      "fieldBackground": "#FFFFFF",
+      "fieldForeground": "#0F172A",
+      "fieldPlaceholder": "#94A3B8", // text.placeholder
+      "fieldBorder": "#DCE4EC",
+      "success": "#00CEB5",
+      "successForeground": "#0F172A",
+      "warning": "#FFB000",
+      "warningForeground": "#0F172A",
+      "danger": "#F04452",
+      "dangerForeground": "#FFFFFF",
+      "segment": "#FFFFFF",
+      "segmentForeground": "#0F172A",
+      "border": "#DCE4EC",
+      "separator": "#DCE4EC",
+      "focus": "#0B6BDD",
+      "link": "#0B6BDD",
+      "surfaceShadow": "0 2px 4px 0 rgba(0, 0, 0, 0.04), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+      "overlayShadow": "0 2px 8px 0 rgba(0, 0, 0, 0.06)",
+      "fieldShadow": "0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+    },
+  },
+  "capabilities": {
+    "registration": {
+      // monelo-app: loginIdentifier "username" con correo y celular y al menos un contacto.
+      "identifier": "username",
+      "accountVerificationContact": "email",
+      "contacts": {
+        "email": { "presence": "required", "verify": true },
+        "phone": { "presence": "optional", "verify": true },
+      },
+    },
+    // Dynamicore IFPE aún no configura onboarding por nivel ni contrato dinámico.
+    "onboarding": {
+      "level": null,
+      "contract": {
+        "generationEndpoint": null,
+        "templateId": null,
+      },
+    },
+    "flags": {
+      "biometricAuth": true,
+      "camera": true,
+      // monelo-app lo activa, pero esta app solo tiene tema claro.
+      "darkMode": false,
+      "documentScanner": true,
+      "fileUpload": true,
+      // monelo-app usa un degradado (#00427C → #0078E2 → #00CEB5) que esta app no consume.
+      "gradient": false,
+      "locationServices": true,
+      "multiLanguage": false,
+      "offlineMode": true,
+      "pushNotifications": true,
+      "qrCodeScanner": true,
+      "socialLogin": false,
+    },
+    "wallet": {
+      "modules": {
+        // Equivale a creditAccounts de monelo-app (desactivado en Dyn).
+        "accounts": {
+          "add": {
+            "enabled": false,
+            "limit": 1,
+          },
+        },
+        "biometric": true,
+        "cards": true,
+        "cashWithdrawal": false,
+        "credit": false,
+        "location": true,
+        "nip": {
+          "editable": true,
+          "enabled": true,
+        },
+        "otp": true,
+        "payrollLoan": false,
+        "preventCapture": false,
+        "servicePayments": true,
+        "spei": {
+          "in": {
+            "clabe": false,
+            "code": false,
+            "reference": true,
+          },
+          "out": {
+            "external": {
+              "card": false,
+              "clabe": false,
+              "phone": false,
+            },
+            "internal": true,
+          },
+        },
+        "transfers": true,
+      },
+      "otp": {
+        "emailTemplate": "1589",
+        "expiresAfterSeconds": 300,
+        "length": 6,
+        "resendAfterSeconds": 60,
+        "smsTemplate": "1588",
+      },
+    },
+  },
+  "connectivity": {
+    "baseUrls": {
+      "app": "https://app.dynamicore.io",
+      "front": "https://front.dynamicore.io",
+      "qa": "https://front-qa.dynamicore.io",
+    },
+    "connectorUrl": "https://connector.dynamicore.io",
+    "integrity": {
+      "google": {
+        "enabled": false,
+        "projectNumber": "711819157653",
+      },
+      "ios": {
+        "enabled": false,
+      },
+    },
+    "providers": {
+      "aws": {
+        "user": {
+          "baseUrl": "https://cognito-idp.us-west-2.amazonaws.com/",
+          "bucket": "documents-fintcore",
+          "context": "a7c2d43d-40d4-40ae-a384-9559648f76d5",
+          "poolsId": "us-west-2_OkUSluRfD",
+          "region": "us-west-2",
+          "webClientId": "67pvv9lbosf4gb2ep8if2mahq",
+        },
+      },
+    },
+    "retryAttempts": 3,
+    "sslPinning": {
+      "enabled": true,
+      "keys": [
+        "wwctAGw/tVg6DIcf2vRMw6VH+PISTb74GdP83vofdfc=",
+        "G9LNNAql897egYsabashkzUCTEJkWBzgoEtk8X/678c=",
+        "++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI=",
+      ],
+    },
+    "timeout": 30000,
+  },
+  "content": {
+    "legal": {
+      "documents": {
+        "privacyNotice": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Dyn/docs/Aviso+de+Privacidad.pdf",
+        "termsConditions": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Dyn/docs/Te%CC%81rminos+y+condiciones.pdf",
+        "electronicMedia": null,
+      },
+      "privacyNoticeUrl": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Dyn/docs/Aviso+de+Privacidad.pdf",
+      "termsUrl": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Dyn/docs/Te%CC%81rminos+y+condiciones.pdf",
+    },
+    "locale": "es-MX",
+    "walkthrough": [
+      {
+        "image": "walkthrough.balance",
+        "title": "Tu saldo, siempre a la mano.",
+        "description": "Consulta tu saldo y revisa los movimientos de tu cuenta.",
+      },
+      {
+        "image": "walkthrough.transfers",
+        "title": "Envía dinero desde la app.",
+        "description": "Haz transferencias a otras cuentas Dynamicore IFPE y consulta tus envíos.",
+      },
+      {
+        "image": "walkthrough.cards",
+        "title": "Administra tus tarjetas en un solo lugar.",
+        "description": "Consulta tus tarjetas físicas y digitales y bloquéalas cuando lo necesites.",
+      },
+    ],
+  },
+  "engagement": {
+    "analytics": {
+      "enabled": false,
+      "provider": "REEMPLAZAR",
+    },
+    "notifications": {
+      "androidCollapsedTitle": "Dynamicore IFPE",
+      "channelId": "dynamicore-ifpe-default",
+      "color": "#0C3A72",
+      "title": "Dynamicore IFPE",
+    },
+  },
+  "identity": {
+    "app": {
+      "displayName": "Dynamicore IFPE",
+      "eas": {
+        "projectId": "a139799d-3023-412b-8c45-099682d879f5",
+      },
+      "name": "Dynamicore IFPE",
+      "owner": "dynamicoredevs",
+      "scheme": "dynamicoreifpe",
+      "slug": "dynamicore-ifpe",
+      "version": "1.0.0",
+    },
+    "company": {
+      "id": "dynamicore-ifpe",
+      // ID numérico de la compañía en el Gateway de S3.
+      "companyId": 5422,
+      "legalName": "REEMPLAZAR_CON_RAZON_SOCIAL",
+      "privacyPolicyUrl": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Dyn/docs/Aviso+de+Privacidad.pdf",
+      // monelo-app tiene valores de relleno ("[EMAIL_ADDRESS]", "+1234567890").
+      "supportEmail": "soporte@REEMPLAZAR_DOMINIO.mx",
+      "supportPhone": "+52REEMPLAZAR_TELEFONO",
+      "termsOfServiceUrl": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Dyn/docs/Te%CC%81rminos+y+condiciones.pdf",
+      "website": "https://dynamicore.io",
+    },
+  },
+  "operations": {
+    "debug": {
+      "enabled": false,
+      "logLevel": "error",
+      "reduxLogger": false,
+      "showDevMenu": false,
+    },
+    "performance": {
+      "enabled": true,
+    },
+  },
+  "platform": {
+    "android": {
+      "edgeToEdgeEnabled": true,
+      "googleServicesFile": "https://dynamicore-files.s3.us-west-2.amazonaws.com/Dyn/google-services.json",
+      "navigationBar": {
+        "backgroundColor": "#000000",
+        "barStyle": "light-content",
+        "visible": false,
+      },
+      "package": "com.dynamicore.ifpe",
+      "versionCode": 1,
+    },
+    "ios": {
+      "bundleIdentifier": "com.dynamicore.ifpe",
+      "googleSignIn": {
+        "reservedClientId": "",
+      },
+      "supportsTablet": false,
+    },
+    "updates": {
+      "checkAutomatically": "ON_LOAD",
+      "enabled": true,
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/a139799d-3023-412b-8c45-099682d879f5",
+    },
+    "web": {
+      "display": "standalone",
+      "lang": "es-MX",
+      "name": "Dynamicore IFPE",
+      "scope": "/",
+      "shortName": "Dynamicore IFPE",
+      "startUrl": "/",
+    },
+  },
+  "safeguards": {
+    "certificatePinning": true,
+    "encryption": {
+      "algorithm": "AES-256-GCM",
+      "enabled": true,
+    },
+    "jailbreakDetection": true,
+    "preventScreenCapture": false,
+    "rootDetection": true,
+  },
+}
