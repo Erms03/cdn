@@ -103,17 +103,17 @@
   },
   "capabilities": {
     "registration": {
-      // monelo-app: loginIdentifier "username" con correo y celular y al menos un contacto.
-      "identifier": "username",
+      // El correo es el identificador de registro e inicio de sesión.
+      "identifier": "email",
       "accountVerificationContact": "email",
       "contacts": {
         "email": { "presence": "required", "verify": true },
         "phone": { "presence": "optional", "verify": true },
       },
     },
-    // Dynamicore IFPE aún no configura onboarding por nivel ni contrato dinámico.
     "onboarding": {
-      "level": null,
+      "level": 3,
+      // Pendiente de confirmar el flujo y la plantilla de contrato de IFPE.
       "contract": {
         "generationEndpoint": null,
         "templateId": null,
